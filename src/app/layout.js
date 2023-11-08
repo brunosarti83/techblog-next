@@ -1,4 +1,5 @@
-
+import Header from '@/components/Header/Header';
+import './globals.css';
 
 export const metadata = {
   title: 'TechBlog NEXT',
@@ -8,7 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header />
+        <div className="p-5">{children}</div></body>
     </html>
   )
 }

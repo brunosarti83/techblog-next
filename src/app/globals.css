@@ -1,1 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+input, textarea {
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding-left: 20px;
+    width: 100%;
+    min-height: 50px;
+    font-size: 14px;
+    color: #3f3f3f;
+}
+
+textarea {
+    padding-top: 20px;
+    min-height: 100px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid darkslategray;
+}
+
+button {
+    height: 45px;
+    min-width: 120px;
+}
+.btn-contained {
+    background-color: #252525;
+    color: white;
+    border-radius: 2px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.btn-outlined {
+    background-color: white;
+    color: #252525;
+    border-radius: 2px;
+    border: 1px solid #252525;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
 

@@ -1,5 +1,6 @@
 import Header from '@/components/Header/Header';
 import './globals.css';
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: 'TechBlog NEXT',
@@ -10,6 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Toaster position="top-center" reverseOrder={false} />
         <Header />
         <div className="p-5">{children}</div></body>
     </html>
